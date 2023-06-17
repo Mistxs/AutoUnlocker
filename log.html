@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Логи</title>
+</head>
+<body>
+<h1>Логи приложения</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Уровень</th>
+        <th>Дата и время</th>
+        <th>Сообщение</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for log in logs %}
+    <tr>
+        <td>{{ log.levelname }}</td>
+        <td>{{ log.asctime }}</td>
+        <td>{{ log.message }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

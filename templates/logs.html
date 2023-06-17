@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Autounlocker - Mistxs</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">autounlocker 0.2</a>
+            <li class="navbar-text inline-block list-none" id="connection-status">
+                <span class="label label-success" title="online" style="line-height: 2;">online</span></li>
+            <button type="button" class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a aria-current="page" class="active" href="/inspect/http">Logs</a>
+                </li>
+                <li><a class="" href="/status">Status</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a target="_blank" rel="noreferrer noopener" href="https://ngrok.com/docs">Documentation</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<p>{{logs}}</p>
+</body>
+</html>
